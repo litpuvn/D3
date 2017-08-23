@@ -68,8 +68,8 @@ var format = d3.time.format("%m/%d/%Y");
 var timeAxisFormat = d3.time.format("%Y-%m-%d");
 
 var margin = {top: 20, right: 40, bottom: 30, left: 80};
-var width = document.body.clientWidth - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var width = 2308 - margin.left - margin.right;
+var height = 1040 - margin.top - margin.bottom;
 var dateRange;
 var tooltip = d3.select("body")
     .append("div")
@@ -624,12 +624,12 @@ var valueSetIndex = 5;
 
   svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + 430 + ")")
+      .attr("transform", "translate(0," + (height - margin.top) + ")")
       .call(xAxis)
       .attr("font-family", "sans-serif")
       .append("text")
       .text("Date")
-      .attr("y", 35)
+      .attr("y", 30)
       .attr("x", width/2)
       .attr("text-anchor", "middle")
       .attr("font-family", "sans-serif")
