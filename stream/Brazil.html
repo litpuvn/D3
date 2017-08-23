@@ -177,7 +177,7 @@ console.log(d3.extent(data, function(d) { return d.value; }))
     uniquekeys.push(currentKey);
   }
 
-  uniquekeys = ["heat", "drought", "protest", "manifestant", "River", "Brazil", "feel", "rain", "Storm", "sleep", "cold", "Hurricane", "drink", "power", "claim", "absent", "leave", "March", "flood", "Government", "Hell ", "good", "hit", "prune", "injured", "urgent", "Sun", "class", "strike ", "kill", "death", "die", "cry", "fuck", "bath", "dead", "arrest", "condition", "bug", "violent", "sad ", "Beach ", "peace ", "demonstrate ", "sit", "school", "life", "duty", "happy"];
+  uniquekeys = ["heat", "drought", "protest", "demonstrator", "River", "Brazil", "feel", "rain", "Storm", "sleep", "cold", "Hurricane", "drink", "power", "claim", "absent", "leave", "March", "flood", "Government", "Hell ", "good", "hit", "prune", "injured", "urgent", "Sun", "class", "strike ", "kill", "death", "die", "cry", "fuck", "bath", "dead", "arrest", "condition", "bug", "violent", "sad ", "Beach ", "peace ", "demonstrate ", "sit", "school", "life", "duty", "happy"];
   console.log(uniquekeys)
   // console.log(data)
 
@@ -607,7 +607,7 @@ var valueSetIndex = 5;
                  indexOfVal = valueSet[valueSetIndex].index;
                   if(d.key == "drought")
                      j = 3;
-                   if(d.key == "heat" || d.key=="manifestant" || d.key=="protest")
+                   if(d.key == "heat" || d.key=="demonstrator" || d.key=="protest")
                      j = 3;
                    if(d.key == "feel")
                      j = 4;
