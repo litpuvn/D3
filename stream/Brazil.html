@@ -68,7 +68,7 @@ var format = d3.time.format("%m/%d/%Y");
 var timeAxisFormat = d3.time.format("%Y-%m-%d");
 
 var margin = {top: 20, right: 40, bottom: 30, left: 80};
-var width = 2308 - margin.left - margin.right;
+var width = document.body.clientWidth - margin.left - margin.right;
 var height = 1040 - margin.top - margin.bottom;
 var dateRange;
 var tooltip = d3.select("body")
